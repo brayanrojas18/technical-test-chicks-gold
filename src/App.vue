@@ -9,13 +9,13 @@ import Pagination from "./components/Pagination.vue";
 import Footer from "./components/Footer.vue";
 
 class Item {
-  name: string;
-  description: string;
-  price: number;
-  oldPrice: number;
-  quantity: number;
-  image: string;
-  logo: string;
+  name?: string;
+  description?: string;
+  price?: number;
+  oldPrice?: number;
+  quantity?: number;
+  image?: string;
+  logo?: string;
 }
 
 // DATA
@@ -42,11 +42,11 @@ const paginatedGames = computed(() => {
 });
 
 // FUNCTIONS
-const onSelectChange = (select) => {
+const onSelectChange = (select: any) => {
   select.isActive = select.value !== "";
 };
 
-const onPageChanged = (newPage) => {
+const onPageChanged = (newPage: number) => {
   currentPage.value = newPage;
 };
 </script>
