@@ -31,4 +31,13 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### General
+
+The project structure consists of custom components which are located in the components folder, in turn these are used in a main file called app.vue which in an organized way complies with the required design.
+
+Finally we have a main css file which is located inside the assets folder, it is called main.css
+
+Resources such as images are inside Public
+
 # technical-test-chicks-gold
