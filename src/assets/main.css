@@ -82,14 +82,17 @@ body {
 .header .content-2 .singin button:hover {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
-.header .menu.open {
+.header .content-1 .menu.open {
   transition: transform 0.3s ease-in-out;
   transform: translateX(-100%);
 }
-.header .menu.open {
+.header .content-1.menu.open {
   transform: translateX(0);
 }
-.header .menu .close-menu {
+.header .content-1 .menu-toggle {
+  display: none;
+}
+.header .content-1 .menu .close-menu {
   background-color: transparent;
   color: #fff;
   border: none;
@@ -113,12 +116,12 @@ body {
   .header .content-1 .separator {
     display: none;
   }
-  .header .menu-toggle {
+  .header .content-1 .menu-toggle {
     display: block;
     font-size: 20px;
     cursor: pointer;
   }
-  .header .menu.open {
+  .header .content-1 .menu.open {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -131,7 +134,7 @@ body {
     z-index: 1001;
     overflow-y: auto;
   }
-  .header .menu .close-menu {
+  .header .content-1 .menu .close-menu {
     display: block;
   }
   .header .content-2 .singin {
